@@ -1,22 +1,16 @@
-# Phase 1 Project
-
-You've made it all the way through the first phase of this course - take a minute to celebrate your awesomeness!
-
-![awesome](https://raw.githubusercontent.com/learn-co-curriculum/dsc-phase-1-project/master/awesome.gif)
-
-Now you will put your new skills to use with a large end-of-Phase project! This project should take 20 to 30 hours to complete.
+# Exploratory Data Analysis With Movies: Phase 1 Project
 
 ## Project Overview
-
-For this project, you will use exploratory data analysis to generate insights for a business stakeholder.
+Nowadays companies are beginning to realize the importance of data availability in large amounts which allows them to infer meaningful results and make informed business decisions. With development of new technologies, Internet and social networks, production of digital data is constantly growing. To get the most out of data, a robust and thorough data analysis process is needed. This project uses exploratory data analysis to generate insights from the movie industry for use by Microsoft Company.
 
 ### Business Problem
 
-Microsoft sees all the big companies creating original video content and they want to get in on the fun. They have decided to create a new movie studio, but they don’t know anything about creating movies. You are charged with exploring what types of films are currently doing the best at the box office. You must then translate those findings into actionable insights that the head of Microsoft's new movie studio can use to help decide what type of films to create.
+Microsoft wants to join the movie industry, however they have no prior knowledge of the industry and they need help so that their movie studio can be successful. This project is aimed at exploring what types of films are currently doing the best at the box office then translate those findings into actionable insights that the head of Microsoft's new movie studio can use to help decide what type of films to create.
 
 ### The Data
 
-In the folder `zippedData` are movie datasets from:
+Data was obtained from several sources namely; Box Office Mojo, IMDB, Rotten Tomatoes,TheMovieDB and The Numbers. 
+In the folder `zippedData` datasets for movies were provided.
 
 * [Box Office Mojo](https://www.boxofficemojo.com/)
 * [IMDB](https://www.imdb.com/)
@@ -24,42 +18,41 @@ In the folder `zippedData` are movie datasets from:
 * [TheMovieDB](https://www.themoviedb.org/)
 * [The Numbers](https://www.the-numbers.com/)
 
-It is up to you to decide what data from this to use and how to use it. If you want to make this more challenging, you can scrape websites or make API calls to get additional data. If you are feeling overwhelmed or behind (e.g. struggled with the Phase 1 Code Challenge), we recommend you use only the following data files:
+The exploratory data analysis process required skills like webscraping, storing and cleaning of data in a pandas dataframe and visualization using seaborn and matplotlib so as to convert the data into an easy to process format.
 
-* imdb.title.basics
-* imdb.title.ratings
-* bom.movie_gross
+## Genres and average rating
+From the analysis, Documentaries had the highest average rating.
+![image](https://github.com/JMangoka1/dsc-phase-1-project/assets/145416424/709cfd15-09b3-486b-a8c0-874d72532140)
 
-## Deliverables
+## Relationship between movie runtime_minutes and averagerating
+It was observed that movies with average runtime minutes have the highest rating
+![image](https://github.com/JMangoka1/dsc-phase-1-project/assets/145416424/590d7b4b-2f5f-459e-88e4-ae28b81574b9)
 
-There are three deliverables for this project:
+## Preferred months of the year to release a movie
+From the analysis highest number of movies are produced in the months of May and December
+![image](https://github.com/JMangoka1/dsc-phase-1-project/assets/145416424/a199c1c5-d6d7-4b07-9246-3a9d5c352f81)
 
-* A **GitHub repository**
-* A **Jupyter Notebook**
-* A **non-technical presentation**
+## Production budget Vs Profit Margins
+Microsoft should budget at least $300M for a movie and that budget should correlate with a profit margin of 85%.
 
-Review the "Project Submission & Review" page in the "Milestones Instructions" topic for instructions on creating and submitting your deliverables. Refer to the rubric associated with this assignment for specifications describing high-quality deliverables.
+![image](https://github.com/JMangoka1/dsc-phase-1-project/assets/145416424/e2cf9fd4-b654-4535-b72d-04a58dba7ef3)
 
-### Key Points
 
-* **Your analysis should yield three concrete business recommendations.** The ultimate purpose of exploratory analysis is not just to learn about the data, but to help an organization perform better. Explicitly relate your findings to business needs by recommending actions that you think the business (Microsoft) should take.
+## Conclusion
+Microsoft should take into consideration the rating of their movies based on genre and average runtime minutes as they have highest ratings
 
-* **Communicating about your work well is extremely important.** Your ability to provide value to an organization - or to land a job there - is directly reliant on your ability to communicate with them about what you have done and why it is valuable. Create a storyline your audience (the head of Microsoft's new movie studio) can follow by walking them through the steps of your process, highlighting the most important points and skipping over the rest.
+## Recommendations
+From the data analysis i recommend that Microsoft;
 
-* **Use plenty of visualizations.** Visualizations are invaluable for exploring your data and making your findings accessible to a non-technical audience. Spotlight visuals in your presentation, but only ones that relate directly to your recommendations. Simple visuals are usually best (e.g. bar charts and line graphs), and don't forget to format them well (e.g. labels, titles).
+Releases the bulk of their movies in May and December
 
-## Getting Started
+Consider Documentaries as they have the highest ratings
 
-Please start by reviewing this assignment, the rubric at the bottom of it, and the "Project Submission & Review" page. If you have any questions, please ask your instructor ASAP.
+Microsoft should budget at least $300M for a movie and that budget should correlate with a profit margin of 85%.
 
-Next, we recommend you check out [the Phase 1 Project Templates and Examples repo](https://github.com/learn-co-curriculum/dsc-project-template) and use the MVP template for your project.
+Interrogate Deep Throat movies to understand the concepts and success in achieving highest profit margins
 
-Alternatively, you can fork [the Phase 1 Project Repository](https://github.com/learn-co-curriculum/dsc-phase-1-project), clone it locally, and work in the `student.ipynb` file. Make sure to also add and commit a PDF of your presentation to your repository with a file name of `presentation.pdf`.
+Learn from BV studios who will be their top competitor in terms of foreign gross revenues
 
-## Project Submission and Review
-
-Review the "Project Submission & Review" page in the "Milestones Instructions" topic to learn how to submit your project and how it will be reviewed. Your project must pass review for you to progress to the next Phase.
-
-## Summary
-
-This project will give you a valuable opportunity to develop your data science skills using real-world data. The end-of-phase projects are a critical part of the program because they give you a chance to bring together all the skills you've learned, apply them to realistic projects for a business stakeholder, practice communication skills, and get feedback to help you improve. You've got this!
+## Next steps
+Exploratory Analysis was used to make recommendations for this project. However, there exists other data analysis methods that can be used to make more accurate recommendations like linear regression models to predict profits based upon one or more variables.Being an introductory project in the data science learning process, it would be exciting to revisit the data after gaining more data science skills to improve on current recommendations
